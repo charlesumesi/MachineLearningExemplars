@@ -80,7 +80,7 @@ elif ready == 'Y' or 'y' and ready != 'n':
   sns.displot((y_test-predictions),kde=True,bins=50)
   plt.savefig('displot1.png')
 
-  print(Fore.GREEN + 'The computer has now learnt your data and produced predictive results from it (based on the linear regression model)\nGenerated graphs are in the current directory\n ')
+  print(Fore.GREEN + ' \nThe computer has now learnt your data and produced predictive results from it (based on the linear regression model)\nGenerated graphs are in the current directory\n ')
   print(Fore.WHITE + 'The mean absolute error\nMAE:',metrics.mean_absolute_error(y_test,predictions))
   print('The mean squared error\nMSE:',metrics.mean_squared_error(y_test,predictions))
   print('The root mean squared error\nRMSE:',np.sqrt(metrics.mean_squared_error(y_test,predictions)))
