@@ -23,13 +23,15 @@ from colorama import Fore
 print(Fore.YELLOW + "Welcome!\nThis program will enable your computer learn your data and predict things from it using the 'Linear Regression Model'\n ")
 print(Fore.WHITE + 'Note that this model will not explicitly tell you a prediction\nIt will instead, give you results from your data that are potentially predictive')
 print('It is up to you to interpret the results\n ')
-print('Also note that this model only works with numerical data')
-ready = input('Are you ready? Y/N: ')
-if ready == 'N': 
+print('Also note that this model only works with CONTINOUS numerical data')
+ready = input('Are your required variables in your data continous numerical values? Y/N: ')
+if ready == 'N':
+  print('That means your data is unsuitable for this model') 
+  print('You could try cleaning it using one of my data cleaners')
   quit('N')
-elif ready == 'Y' or 'y':
+elif ready == 'Y' or 'y' and ready != 'n':
   # Prompt
-  print('Make sure your data is in the form of a csv file and in the same directory as this program\n ')
+  print(' \nMake sure your data document is in the form of a csv file and in the same directory as this program\n ')
 
   # Inputs
   question = input('What are you wanting to predict from your data?: ')
