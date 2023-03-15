@@ -24,7 +24,7 @@ print(Fore.YELLOW + "Welcome!\nThis program will enable your computer learn your
 print(Fore.WHITE + 'Note that this model will not explicitly tell you a prediction\nIt will instead, give you results from your data that are potentially predictive')
 print('It is up to you to interpret the results\n ')
 print('Also note that this model only works with CONTINOUS numerical data')
-ready = input('Are your required variables in your data continous numerical values? Y/N: ')
+ready = input('Do your required variables in your data only have CONTINUOUS numerical values? Y/N: ')
 if ready == 'N':
   print('That means your data is unsuitable for this model') 
   print('You could try cleaning it using one of my data cleaners')
