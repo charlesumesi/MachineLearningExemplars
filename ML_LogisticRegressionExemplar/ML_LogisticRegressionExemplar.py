@@ -56,7 +56,7 @@ elif ready == 'Y' or 'y' and ready != 'n':
   # Tuple unpacking and splitting of data into 'training' and 'testing' sets
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
 
-  # Create an instance of LinearRegression for your computer
+  # Create an instance of LogisticRegression for your computer
   logmodel = LogisticRegression(solver='liblinear')
 
   # Train/fit your computer's lm on training data
