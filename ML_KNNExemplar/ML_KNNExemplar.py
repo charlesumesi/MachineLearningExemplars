@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on 17 Mar 2023
-Name: ML_LogisticRegressionExemplar.py
+Name: ML_KNNExemplar.py
 Purpose: Machine Learning Program based on K-Nearest Neighbour (KNN) Model
 @author: Charles Umesi (charlesumesi)
 """
