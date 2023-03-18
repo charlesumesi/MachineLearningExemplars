@@ -20,21 +20,21 @@ from colorama import Fore
 # Note: This code requires a virtual environment to function properly
 
 # Introduction
-print(Fore.YELLOW + "Welcome!\nThis program will enable your computer learn your data and predict things from it using the 'Linear Regression Model'\n ")
-print(Fore.WHITE + 'Note that this model will not explicitly tell you a prediction\nIt will instead, give you results from your data that are potentially predictive')
-print('It is up to you to interpret the results\n ')
+print(Fore.YELLOW + "Welcome!\nThis program will enable your computer learn your data and make predictions from it using the 'Linear Regression Model'\n ")
+print(Fore.WHITE + 'Using your data, it will predict numerical values for your chosen variable based on the values of other variables in the data you provide')
+print("This is done for each row in your 'test' data")
+print('It is, however, up to you to interpret the results!\n ')
 print('Also note that this model only works with CONTINOUS numerical data')
 ready = input('Do your required variables in your data only have CONTINUOUS numerical values? Y/N: ')
 if ready == 'N':
   print('That means your data is unsuitable for this model') 
   print('You could try cleaning it using one of my data cleaners')
   quit('N')
-elif ready == 'Y' or 'y' and ready != 'n':
+elif ready == 'Y':
   # Prompt
   print(' \nMake sure your data document is in the form of a csv file and in the same directory as this program\n ')
 
   # Inputs
-  question = input('What are you wanting to predict from your data?: ')
   file = input('Enter the name of your file (with csv extension): ')
   target = input("Enter the name of your 'target' (dependent variable) exactly as it appears in your csv file: ")
   features_numbers = int(input("How many 'features' (independent variables) are you including?: "))
@@ -74,13 +74,15 @@ elif ready == 'Y' or 'y' and ready != 'n':
   plt.xlabel('Actual '+ target)
   plt.ylabel('Predicted ' + target)
   plt.scatter(y_test,predictions)
+  plt.title('Predicted v Actual')
+  plt.style.use('seaborn-darkgrid')
   plt.savefig('scatterplot1.png')
 
   # Generate a histogram of the residuals
   sns.displot((y_test-predictions),kde=True,bins=50)
   plt.savefig('displot1.png')
 
-  print(Fore.GREEN + ' \nThe computer has now learnt your data and produced predictive results from it (based on the linear regression model)\nGenerated graphs are in the current directory\n ')
+  print(Fore.GREEN + " \nYour computer split your data into 'training' and 'testing' parts. It learnt from the training part and produced predictive results from the testing part (based on the linear regression model)\nGenerated graphs are in the current directory\n ")
   print(Fore.WHITE + 'The mean absolute error\nMAE:',metrics.mean_absolute_error(y_test,predictions))
   print('The mean squared error\nMSE:',metrics.mean_squared_error(y_test,predictions))
   print('The root mean squared error\nRMSE:',np.sqrt(metrics.mean_squared_error(y_test,predictions)))
