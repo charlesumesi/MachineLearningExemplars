@@ -17,21 +17,21 @@ from colorama import Fore
 # Note: This code requires a virtual environment to function properly
 
 # Introduction
-print(Fore.YELLOW + "Welcome!\nThis program will enable your computer learn your data and predict things from it using the 'Logistic Regression Model'\n ")
-print(Fore.WHITE + 'Note that this model will not explicitly tell you a prediction\nIt will instead, tell you how well it can predict your chosen variable from a list of variables in the data you provide')
-print('It is up to you to interpret the results\n ')
+print(Fore.YELLOW + "Welcome!\nThis program will enable your computer learn your data and make predictions from it using the 'Logistic Regression Model'\n ")
+print(Fore.WHITE + 'Using your data, it will tell you how well it can predict the categorical value of your chosen variable from a list of variables in the data you provide')
+print("This is done for each row in your 'test' data")
+print('It is, however, up to you to interpret the results!\n ')
 print('Also note that this model only works with numerical data')
 ready = input('Do your required variables in your data only have numerical values? Y/N: ')
 if ready == 'N':
   print('That means your data is unsuitable for this model') 
   print('You could try cleaning it using one of my data cleaners')
   quit('N')
-elif ready == 'Y' or 'y' and ready != 'n':
+elif ready == 'Y':
   # Prompt
   print(' \nMake sure your data document is in the form of a csv file and in the same directory as this program\n ')
 
   # Inputs
-  question = input('What are you wanting to predict from your data?: ')
   file = input('Enter the name of your file (with csv extension): ')
   target = input("Enter the name of your 'target' (dependent variable) exactly as it appears in your csv file: ")
   features_numbers = int(input("How many 'features' (independent variables) are you including?: "))
@@ -59,7 +59,7 @@ elif ready == 'Y' or 'y' and ready != 'n':
   # Create an instance of LogisticRegression for your computer
   logmodel = LogisticRegression(solver='liblinear')
 
-  # Train/fit your computer's lm on training data
+  # Train/fit your computer's logmodel on training data
   logmodel.fit(X_train, y_train)
 
   # Evaluate the performance of the training/fit by predicting off the test set of data
@@ -68,5 +68,5 @@ elif ready == 'Y' or 'y' and ready != 'n':
   predictions = logmodel.predict(X_test)
 
   # Generate a tabulated result
-  print(Fore.GREEN + ' \nThe computer has now learnt your data and produced predictive results from it (based on the logistic regression model)\n ')
+  print(Fore.GREEN + " \nYour computer split your data into 'training' and 'testing' parts. It learnt from the training part and produced predictive results from the testing part (based on the logistic regression model)\n ")
   print(Fore.WHITE + "See table below ('0' is a negative result for your chosen variable and '1' is a positive one)\n",classification_report(y_test,predictions))
