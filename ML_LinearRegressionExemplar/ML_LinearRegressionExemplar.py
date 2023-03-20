@@ -94,3 +94,11 @@ elif ready == 'Y':
   # Generate a pairplot for a visual display of the correlations between variables (this step can interfere with the generation of the scatterplot so is placed several steps further down)
   sns.pairplot(df)
   plt.savefig('pairplot1.png')
+  hue_question = input(" \nLook at your pairplot; would you like a 'hue' for it? (Y/N): ")
+  if hue_question == 'N':
+    quit('N')
+  elif hue_question == 'Y':
+    hue = input("Enter the name of the feature (independent variable) exactly as it appears in your csv file: ")
+    sns.pairplot(df,hue=hue,kind='scatter',diag_kind='hist')
+    plt.savefig('pairplot2.png')
+
