@@ -1,5 +1,5 @@
 # MachineLearningExemplars
-A group of programs based on different models that enable machine learning in your computer
+A portfolio of machine learning models
 
 
 **Models include:**
