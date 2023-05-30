@@ -9,3 +9,5 @@ K-Nearest Neighbour (KNN) (ML_KNNExemplar)
 Linear Regression (ML_LinearRegressionExemplar)
 <br>
 Logistic Regression (ML_LogisticRegressionExemplar)
+<br>
+Neural Net (For predicting banking crises in selected African countries)
