@@ -10,4 +10,4 @@ Linear Regression (ML_LinearRegressionExemplar)
 <br>
 Logistic Regression (ML_LogisticRegressionExemplar)
 <br>
-Neural Net (For predicting banking crises in a selection of African countries)
+Neural Network (For predicting banking crises in a selection of African countries)
