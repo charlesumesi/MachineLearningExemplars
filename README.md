@@ -10,4 +10,4 @@ Linear Regression (ML_LinearRegressionExemplar)
 <br>
 Logistic Regression (ML_LogisticRegressionExemplar)
 <br>
-Neural Networks (Portfolio containing multiple networks for different predictions, includes natural language processing and deep learning)
+Neural Networks (ML_NeuralNets – Portfolio containing multiple networks for different predictions, includes natural language processing and deep learning)
