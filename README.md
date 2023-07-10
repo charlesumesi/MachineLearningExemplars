@@ -10,4 +10,6 @@ Linear Regression (ML_LinearRegressionExemplar)
 <br>
 Logistic Regression (ML_LogisticRegressionExemplar)
 <br>
+Support Vector Machine (ML_SVCExemplar)
+<br>
 Neural Networks (ML_NeuralNets – Portfolio containing multiple networks for different predictions, includes natural language processing and deep learning)
