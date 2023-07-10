@@ -6,10 +6,10 @@ A portfolio of machine learning models
 <br>
 <strong><em>K-Nearest Neighbour (KNN)</em></strong> (ML_KNNExemplar)
 <br>
-<em>Linear Regression (ML_LinearRegressionExemplar)</em>
+<strong><em>Linear Regression</em></strong> (ML_LinearRegressionExemplar)
 <br>
-Logistic Regression (ML_LogisticRegressionExemplar)
+<strong><em>Logistic Regression</em></strong> (ML_LogisticRegressionExemplar)
 <br>
-Support Vector Machine (ML_SVCExemplar)
+<strong><em>Support Vector Machine</em></strong> (ML_SVCExemplar)
 <br>
-Neural Networks (ML_NeuralNets – Portfolio containing multiple networks for different predictions, includes natural language processing and deep learning)
+<strong><em>Neural Networks</em></strong> (ML_NeuralNets – Portfolio containing multiple networks for different predictions, includes natural language processing and deep learning)
