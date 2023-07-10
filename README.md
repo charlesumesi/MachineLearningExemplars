@@ -6,7 +6,7 @@ A portfolio of machine learning models
 <br>
 <font color="purple">K-Nearest Neighbour (KNN**)</font> (ML_KNNExemplar)
 <br>
-Linear Regression (ML_LinearRegressionExemplar)
+<strong>Linear Regression (ML_LinearRegressionExemplar)</strong>
 <br>
 Logistic Regression (ML_LogisticRegressionExemplar)
 <br>
