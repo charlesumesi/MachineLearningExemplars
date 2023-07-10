@@ -4,7 +4,7 @@ A portfolio of machine learning models
 
 **Models include:**
 <br>
-<span style="color:blue;">K-Nearest Neighbour (KNN)</span> (ML_KNNExemplar)
+<strong><em>K-Nearest Neighbour (KNN)</em></strong> (ML_KNNExemplar)
 <br>
 <em>Linear Regression (ML_LinearRegressionExemplar)</em>
 <br>
